@@ -54,4 +54,7 @@ partyHorn.onclick = function() {horn.src = "./assets/media/audio/party-horn.mp3"
 
 /* Play the horn */
 var honk = document.getElementById("honk-btn");
-honk.onclick = function () {horn.play();}
+honk.onclick = function (e) {
+    e.preventDefault();
+    horn.play();
+}
